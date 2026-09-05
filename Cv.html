@@ -1,0 +1,228 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>CV — Rylee Barnette</title>
+  <script>
+    (function(){try{var s=localStorage.getItem('theme');var d=window.matchMedia&&matchMedia('(prefers-color-scheme:dark)').matches;document.documentElement.setAttribute('data-theme',s||(d?'dark':'light'));}catch(e){}})();
+    function toggleTheme(){var el=document.documentElement;var n=el.getAttribute('data-theme')==='dark'?'light':'dark';el.setAttribute('data-theme',n);try{localStorage.setItem('theme',n);}catch(e){}}
+  </script>
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Fredoka:wght@400..700&family=Quicksand:wght@400..700&display=swap" rel="stylesheet">
+  <link rel="stylesheet" href="style.css">
+</head>
+<body>
+  <nav>
+    <a href="index.html">Home</a>
+    <a href="about.html">About</a>
+    <a href="cv.html" class="active">CV</a>
+    <a href="projects.html">Projects</a>
+    <a href="demos.html">Demos</a>
+    <a href="music.html">Music</a>
+    <button class="theme-toggle" onclick="toggleTheme()" aria-label="Toggle dark mode" title="Toggle dark mode">
+      <svg class="icon-moon" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><path d="M21 12.79A9 9 0 1 1 11.21 3 7 7 0 0 0 21 12.79z"/></svg>
+      <svg class="icon-sun" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><circle cx="12" cy="12" r="4"/><path d="M12 2v2M12 20v2M4.93 4.93l1.41 1.41M17.66 17.66l1.41 1.41M2 12h2M20 12h2M6.34 17.66l-1.41 1.41M19.07 4.93l-1.41 1.41"/></svg>
+    </button>
+  </nav>
+
+  <main>
+    <p class="eyebrow">CV</p>
+    <h2>Curriculum Vitae</h2>
+    <p class="demos-intro">
+      Insert Text Here — one line summarizing your background, or a link/button to a downloadable PDF version of your CV.
+    </p>
+
+    <!-- ===== Education ===== -->
+    <section class="section" id="education">
+      <h3>Education</h3>
+
+      <div class="cv-entry">
+        <p class="meta">Insert Years Here</p>
+        <p class="role">Insert Degree Here — Insert Institution Here</p>
+        <ul>
+          <li>Insert Text Here — major/minor, concentration, or thesis title</li>
+          <li>Insert Text Here — GPA, honors program, or relevant coursework</li>
+        </ul>
+      </div>
+
+      <div class="cv-entry">
+        <p class="meta">Insert Years Here</p>
+        <p class="role">Insert Degree Here — Insert Institution Here</p>
+        <ul>
+          <li>Insert Text Here</li>
+        </ul>
+      </div>
+    </section>
+
+    <!-- ===== Research Experience ===== -->
+    <section class="section" id="research">
+      <h3>Research Experience</h3>
+
+      <div class="cv-entry">
+        <p class="meta">Insert Years Here · Insert Lab/Department Here</p>
+        <p class="role">Insert Position Title Here — Insert Institution Here</p>
+        <ul>
+          <li>Insert Text Here — what you researched and your specific contribution</li>
+          <li>Insert Text Here — techniques, instruments, or software used</li>
+          <li>Insert Text Here — an outcome, finding, or presentation that resulted</li>
+        </ul>
+      </div>
+
+      <div class="cv-entry">
+        <p class="meta">Insert Years Here · Insert Lab/Department Here</p>
+        <p class="role">Insert Position Title Here — Insert Institution Here</p>
+        <ul>
+          <li>Insert Text Here</li>
+        </ul>
+      </div>
+    </section>
+
+    <!-- ===== Work Experience ===== -->
+    <section class="section" id="experience">
+      <h3>Work Experience</h3>
+
+      <div class="cv-entry">
+        <p class="meta">Insert Years Here · Insert Location Here</p>
+        <p class="role">Insert Job Title Here — Insert Employer Here</p>
+        <ul>
+          <li>Insert Text Here — a key responsibility or task</li>
+          <li>Insert Text Here — an achievement, with a number if you have one</li>
+        </ul>
+      </div>
+
+      <div class="cv-entry">
+        <p class="meta">Insert Years Here · Insert Location Here</p>
+        <p class="role">Insert Job Title Here — Insert Employer Here</p>
+        <ul>
+          <li>Insert Text Here</li>
+        </ul>
+      </div>
+    </section>
+
+    <!-- ===== Volunteer Work ===== -->
+    <section class="section" id="volunteer">
+      <h3>Volunteer Work</h3>
+
+      <div class="cv-entry">
+        <p class="meta">Insert Years Here</p>
+        <p class="role">Insert Role Here — Insert Organization Here</p>
+        <ul>
+          <li>Insert Text Here — what you did and roughly how often</li>
+          <li>Insert Text Here — impact or outcome</li>
+        </ul>
+      </div>
+
+      <div class="cv-entry">
+        <p class="meta">Insert Years Here</p>
+        <p class="role">Insert Role Here — Insert Organization Here</p>
+        <ul>
+          <li>Insert Text Here</li>
+        </ul>
+      </div>
+    </section>
+
+    <!-- ===== Leadership & Involvement ===== -->
+    <section class="section" id="leadership">
+      <h3>Leadership &amp; Involvement</h3>
+
+      <div class="cv-entry">
+        <p class="meta">Insert Years Here</p>
+        <p class="role">Insert Role Here — Insert Club/Organization Here</p>
+        <ul>
+          <li>Insert Text Here</li>
+        </ul>
+      </div>
+    </section>
+
+    <!-- ===== Skills ===== -->
+    <section class="section" id="skills">
+      <h3>Skills</h3>
+
+      <div class="cv-entry">
+        <p class="meta">Technical &amp; Lab Skills</p>
+        <div class="honors">
+          <span>Insert Skill Here</span>
+          <span>Insert Skill Here</span>
+          <span>Insert Skill Here</span>
+          <span>Insert Skill Here</span>
+        </div>
+      </div>
+
+      <div class="cv-entry">
+        <p class="meta">Software &amp; Tools</p>
+        <div class="honors">
+          <span>Insert Software Here</span>
+          <span>Insert Software Here</span>
+          <span>Insert Software Here</span>
+        </div>
+      </div>
+
+      <div class="cv-entry">
+        <p class="meta">Languages</p>
+        <div class="honors">
+          <span>Insert Language Here — Insert Level Here</span>
+        </div>
+      </div>
+    </section>
+
+    <!-- ===== Publications & Presentations ===== -->
+    <section class="section" id="publications">
+      <h3>Publications &amp; Presentations</h3>
+
+      <div class="cv-entry">
+        <p class="meta">Insert Date Here</p>
+        <p class="role">Insert Title Here</p>
+        <ul>
+          <li>Insert Text Here — journal/conference name, co-authors, and a link if available</li>
+        </ul>
+      </div>
+    </section>
+
+    <!-- ===== Awards & Honors ===== -->
+    <section class="section" id="awards">
+      <h3>Awards &amp; Honors</h3>
+      <div class="honors">
+        <span>Insert Award Here</span>
+        <span>Insert Award Here</span>
+        <span>Insert Award Here</span>
+        <span>Insert Award Here</span>
+      </div>
+    </section>
+
+    <!-- ===== Certifications ===== -->
+    <section class="section" id="certifications">
+      <h3>Certifications</h3>
+      <div class="honors">
+        <span>Insert Certification Here</span>
+        <span>Insert Certification Here</span>
+      </div>
+    </section>
+
+  </main>
+
+  <footer>
+    Built by Rylee Barnette · <a href="https://github.com/ryleeannebarnette" target="_blank" rel="noopener">GitHub</a>
+                           · <a href="https://www.linkedin.com/in/rylee-barnette-5aaa1438b/" target="_blank" rel="noopener">LinkedIn</a>
+                           · <a href="mailto:ryleeannebarnette@gmail.com">Email</a>
+  </footer>
+</body>
+</html>      <p class="eyebrow">Portfolio / Chemical/Material Engineering</p>
+      <h1>Rylee Barnette</h1>
+      <p class="lede">Biochemistry and Applied Mathematics Graduate, experimental design and computational research, I have a passion for everything science!</p>
+      <div class="spec-row">
+        <span> Chemical Engineering, UCA</span>
+        <span>Chemical Engineering</span>
+        <span>Conway, AR</span>
+      </div>
+      <a href="projects.html" class="btn">View Projects →</a>
+    </div>
+  </header>
+  <footer>
+    Built by Rylee Barnette · <a href="https://github.com/ryleeannebarnette" target="_blank" rel="noopener">GitHub</a>
+                           · <a href="https://www.linkedin.com/in/rylee-barnette-5aaa1438b/" target="_blank" rel="noopener">LinkedIn</a>
+                           · <a href="mailto:ryleeannebarnette@gmail.com">Email</a>
+  </footer>
+</body>
+</html>
