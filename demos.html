@@ -3,7 +3,7 @@
 <head>
   <meta charset="UTF-8">
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
-  <title>Demos — Rylee Barnette</title>
+  <title>Music — Rylee Barnette</title>
   <script>
     (function(){try{var s=localStorage.getItem('theme');var d=window.matchMedia&&matchMedia('(prefers-color-scheme:dark)').matches;document.documentElement.setAttribute('data-theme',s||(d?'dark':'light'));}catch(e){}})();
     function toggleTheme(){var el=document.documentElement;var n=el.getAttribute('data-theme')==='dark'?'light':'dark';el.setAttribute('data-theme',n);try{localStorage.setItem('theme',n);}catch(e){}}
@@ -12,15 +12,29 @@
   <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
   <link href="https://fonts.googleapis.com/css2?family=Fredoka:wght@400..700&family=Quicksand:wght@400..700&display=swap" rel="stylesheet">
   <link rel="stylesheet" href="style.css">
+  <style>
+    /* small additions just for this page — audio players and the photo grid */
+    .audio-item { margin-bottom: 22px; }
+    .audio-item:last-child { margin-bottom: 0; }
+    .audio-item p.demo-cap { margin-bottom: 8px; }
+    .audio-item audio { width: 100%; border-radius: 999px; }
+    .photo-grid { display: grid; grid-template-columns: repeat(3, 1fr); gap: 18px; margin-top: 10px; }
+    .photo-grid img {
+      width: 100%; aspect-ratio: 4 / 5; object-fit: cover;
+      border-radius: 20px; border: 2px solid var(--line);
+      box-shadow: 0 10px 24px var(--shadow);
+    }
+    @media (max-width: 680px) { .photo-grid { grid-template-columns: repeat(2, 1fr); } }
+  </style>
 </head>
 <body>
   <nav>
     <a href="index.html">Home</a>
     <a href="about.html">About</a>
-    <a href="vita.html">CV</a>
+    <a href="cv.html">CV</a>
     <a href="projects.html">Projects</a>
-    <a href="demos.html" class="active">Demos</a>
-    <a href="music.html">Music</a>
+    <a href="demos.html">Demos</a>
+    <a href="music.html" class="active">Music</a>
     <button class="theme-toggle" onclick="toggleTheme()" aria-label="Toggle dark mode" title="Toggle dark mode">
       <svg class="icon-moon" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><path d="M21 12.79A9 9 0 1 1 11.21 3 7 7 0 0 0 21 12.79z"/></svg>
       <svg class="icon-sun" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><circle cx="12" cy="12" r="4"/><path d="M12 2v2M12 20v2M4.93 4.93l1.41 1.41M17.66 17.66l1.41 1.41M2 12h2M20 12h2M6.34 17.66l-1.41 1.41M19.07 4.93l-1.41 1.41"/></svg>
@@ -28,13 +42,109 @@
   </nav>
 
   <main>
-    <p class="eyebrow">Demos</p>
-    <h2>See it run</h2>
-    <p class="demos-intro">Short demonstrations of the projects in action. Click a thumbnail to play.</p>
+    <p class="eyebrow">Music</p>
+    <h2>Music &amp; Performance</h2>
+    <p class="demos-intro">Insert Text Here — a couple of sentences on your musical background and what this page covers.</p>
 
-    <!-- ===== WonkyBot (2 videos) ===== -->
-    <section class="demo" id="wonkybot">
-      <div class="tag">Robotics · Embedded · Computer Vision</div>
+    <!-- ===== Instruments ===== -->
+    <section class="section" id="instruments">
+      <h3>Instruments I Play</h3>
+      <div class="honors">
+        <span>Instrument One</span>
+        <span>Instrument Two</span>
+        <span>Instrument Three</span>
+      </div>
+    </section>
+
+    <!-- ===== Choir ===== -->
+    <section class="section" id="choir">
+      <h3>Choir</h3>
+      <div class="cv-entry">
+        <p class="meta">Insert Years Here</p>
+        <p class="role">Insert Choir Name Here</p>
+        <p>Insert Text Here — your role, voice part, or a memorable performance.</p>
+      </div>
+    </section>
+
+    <!-- ===== Awards & Honors ===== -->
+    <section class="section" id="awards">
+      <h3>Awards &amp; Honors</h3>
+      <div class="honors">
+        <span>Insert Award Here</span>
+        <span>Insert Award Here</span>
+        <span>Insert Award Here</span>
+      </div>
+    </section>
+
+    <!-- ===== Videos ===== -->
+    <section class="section" id="videos">
+      <h3>Performance Videos</h3>
+      <p class="demos-intro">Click a thumbnail to play.</p>
+      <div class="demo-multi">
+        <div>
+          <p class="demo-cap">Insert Video Title Here</p>
+          <div class="yt-facade demos-facade" data-id="VIDEO_ID">
+            <img src="insert-thumbnail-1.jpg" alt="Insert video description here" loading="lazy">
+            <button class="yt-play" aria-label="Play video"><svg viewBox="0 0 24 24"><path d="M8 5v14l11-7z"/></svg></button>
+          </div>
+        </div>
+        <div>
+          <p class="demo-cap">Insert Video Title Here</p>
+          <div class="yt-facade demos-facade" data-id="VIDEO_ID">
+            <img src="insert-thumbnail-2.jpg" alt="Insert video description here" loading="lazy">
+            <button class="yt-play" aria-label="Play video"><svg viewBox="0 0 24 24"><path d="M8 5v14l11-7z"/></svg></button>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <!-- ===== Audio ===== -->
+    <section class="section" id="audio">
+      <h3>Audio Recordings</h3>
+      <div class="audio-item">
+        <p class="demo-cap">Insert Track Title Here</p>
+        <audio controls src="insert-audio-file-1.mp3"></audio>
+      </div>
+      <div class="audio-item">
+        <p class="demo-cap">Insert Track Title Here</p>
+        <audio controls src="insert-audio-file-2.mp3"></audio>
+      </div>
+    </section>
+
+    <!-- ===== Photos ===== -->
+    <section class="section" id="photos">
+      <h3>Photos</h3>
+      <div class="photo-grid">
+        <img src="insert-photo-1.jpg" alt="Insert photo description here" loading="lazy">
+        <img src="insert-photo-2.jpg" alt="Insert photo description here" loading="lazy">
+        <img src="insert-photo-3.jpg" alt="Insert photo description here" loading="lazy">
+      </div>
+    </section>
+  </main>
+
+  <footer>
+    Built by Rylee Barnette · <a href="https://github.com/ryleeannebarnette" target="_blank" rel="noopener">GitHub</a>
+                           · <a href="https://www.linkedin.com/in/rylee-barnette-5aaa1438b/" target="_blank" rel="noopener">LinkedIn</a>
+                           · <a href="mailto:ryleeannebarnette@gmail.com">Email</a>
+  </footer>
+
+  <script>
+    document.addEventListener('click', function (e) {
+      var f = e.target.closest('.yt-facade');
+      if (!f || f.querySelector('iframe')) return;
+      var id = f.getAttribute('data-id') || '';
+      if (!id || id.indexOf('VIDEO_ID') !== -1) return;
+      var ifr = document.createElement('iframe');
+      ifr.src = 'https://www.youtube.com/embed/' + id + '?autoplay=1&rel=0';
+      ifr.title = 'Video player';
+      ifr.allow = 'accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture';
+      ifr.setAttribute('allowfullscreen', '');
+      f.innerHTML = '';
+      f.appendChild(ifr);
+    });
+  </script>
+</body>
+</html>      <div class="tag">Robotics · Embedded · Computer Vision</div>
       <h3>WonkyBot</h3>
       <div class="demo-multi">
         <div>
