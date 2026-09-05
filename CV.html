@@ -10,7 +10,7 @@
   </script>
   <link rel="preconnect" href="https://fonts.googleapis.com">
   <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
-  <link href="https://fonts.googleapis.com/css2?family=DM+Sans:ital,opsz,wght@0,9..40,100..1000;1,9..40,100..1000&family=Fraunces:ital,opsz,wght@0,9..144,100..900;1,9..144,100..900&family=JetBrains+Mono:ital,wght@0,100..800;1,100..800&display=swap" rel="stylesheet">
+  <link href="https://fonts.googleapis.com/css2?family=Fredoka:wght@400..700&family=Quicksand:wght@400..700&display=swap" rel="stylesheet">
   <link rel="stylesheet" href="style.css">
 </head>
 <body>
@@ -28,89 +28,182 @@
   </nav>
 
   <main>
-    <p class="eyebrow">Curriculum Vitae</p>
-    <h2>Experience &amp; Education</h2>
+    <p class="eyebrow">CV</p>
+    <h2>Curriculum Vitae</h2>
+    <p class="demos-intro">
+      Insert Text Here — one line summarizing your background, or a link/button to a downloadable PDF version of your CV.
+    </p>
 
-    <section class="section">
-      <h3>Experience</h3>
-
-      <div class="cv-entry">
-        <div class="meta">2026 — Present</div>
-        <div class="role">R&amp;D Engineering Intern · Georg Fischer Piping Systems</div>
-        <ul>
-          <li>Running a dimensional-stability / cooling study on manufactured
-          pipe to characterize shrinkage and production rate using Six Sigma and Design-of-Experiments methods.</li>
-          <li>Collected and analyzed measurement data to characterize part behavior and
-          inform process decisions.</li>
-        </ul>
-      </div>
-
-      <div class="cv-entry">
-        <div class="meta">8 years · through May 2026</div>
-        <div class="role">Personal Shopper · Walmart</div>
-        <ul>
-          <li>Worked full time while completing an engineering degree; reliability,
-          time management, and consistent execution under load.</li>
-        </ul>
-      </div>
-    </section>
-
-    <section class="section">
-      <h3>Projects</h3>
-
-      <div class="cv-entry">
-        <div class="meta">Senior Capstone · 2026</div>
-        <div class="role">WonkyBot · Autonomous Ball-Sorting Robot</div>
-        <ul>
-          <li>Led the electrical and software development of a fully autonomous robot: ROS 2 Jazzy
-          with Nav2 navigation, Intel RealSense depth perception, and a Raspberry Pi 5 / Pico 2
-          differential-drive control system.</li>
-          <li>Placed 3rd statewide and won Best Notebook at the Arkansas Space Grant Consortium;
-          presented at the IEEE Student Showcase.</li>
-        </ul>
-      </div>
-
-      <div class="cv-entry">
-        <div class="meta">Personal · 2026</div>
-        <div class="role">Randomizing Passcode · Ciphered Lock</div>
-        <ul>
-          <li>Designed an embedded "solve-for-it" cipher lock on a Raspberry Pi Pico: a randomizing
-          passcode with 74HC595 LED hints, buzzer and RGB feedback, and a non-blocking state machine
-          with lockout logic.</li>
-          <li>Designed and ordered a custom PCB, moving the circuit from breadboard to a fabricated board.</li>
-        </ul>
-      </div>
-
-      <div class="cv-entry">
-        <div class="meta">Personal · ongoing</div>
-        <div class="role">Glitch MK1 / MK2 · Personal Robotics</div>
-        <ul>
-          <li>Built two generations of personal mobile robots (mecanum drive, hall-sensor motor
-          control) as ongoing embedded and robotics R&amp;D.</li>
-        </ul>
-      </div>
-    </section>
-
-    <section class="section">
+    <!-- ===== Education ===== -->
+    <section class="section" id="education">
       <h3>Education</h3>
+
       <div class="cv-entry">
-        <div class="meta">University of Central Arkansas · May 2026 · ABET-accredited</div>
-        <div class="role">B.S. Engineering Physics</div>
+        <p class="meta">Insert Years Here</p>
+        <p class="role">Insert Degree Here — Insert Institution Here</p>
+        <ul>
+          <li>Insert Text Here — major/minor, concentration, or thesis title</li>
+          <li>Insert Text Here — GPA, honors program, or relevant coursework</li>
+        </ul>
+      </div>
+
+      <div class="cv-entry">
+        <p class="meta">Insert Years Here</p>
+        <p class="role">Insert Degree Here — Insert Institution Here</p>
+        <ul>
+          <li>Insert Text Here</li>
+        </ul>
+      </div>
+    </section>
+
+    <!-- ===== Research Experience ===== -->
+    <section class="section" id="research">
+      <h3>Research Experience</h3>
+
+      <div class="cv-entry">
+        <p class="meta">Insert Years Here · Insert Lab/Department Here</p>
+        <p class="role">Insert Position Title Here — Insert Institution Here</p>
+        <ul>
+          <li>Insert Text Here — what you researched and your specific contribution</li>
+          <li>Insert Text Here — techniques, instruments, or software used</li>
+          <li>Insert Text Here — an outcome, finding, or presentation that resulted</li>
+        </ul>
+      </div>
+
+      <div class="cv-entry">
+        <p class="meta">Insert Years Here · Insert Lab/Department Here</p>
+        <p class="role">Insert Position Title Here — Insert Institution Here</p>
+        <ul>
+          <li>Insert Text Here</li>
+        </ul>
+      </div>
+    </section>
+
+    <!-- ===== Work Experience ===== -->
+    <section class="section" id="experience">
+      <h3>Work Experience</h3>
+
+      <div class="cv-entry">
+        <p class="meta">Insert Years Here · Insert Location Here</p>
+        <p class="role">Insert Job Title Here — Insert Employer Here</p>
+        <ul>
+          <li>Insert Text Here — a key responsibility or task</li>
+          <li>Insert Text Here — an achievement, with a number if you have one</li>
+        </ul>
+      </div>
+
+      <div class="cv-entry">
+        <p class="meta">Insert Years Here · Insert Location Here</p>
+        <p class="role">Insert Job Title Here — Insert Employer Here</p>
+        <ul>
+          <li>Insert Text Here</li>
+        </ul>
+      </div>
+    </section>
+
+    <!-- ===== Volunteer Work ===== -->
+    <section class="section" id="volunteer">
+      <h3>Volunteer Work</h3>
+
+      <div class="cv-entry">
+        <p class="meta">Insert Years Here</p>
+        <p class="role">Insert Role Here — Insert Organization Here</p>
+        <ul>
+          <li>Insert Text Here — what you did and roughly how often</li>
+          <li>Insert Text Here — impact or outcome</li>
+        </ul>
+      </div>
+
+      <div class="cv-entry">
+        <p class="meta">Insert Years Here</p>
+        <p class="role">Insert Role Here — Insert Organization Here</p>
+        <ul>
+          <li>Insert Text Here</li>
+        </ul>
+      </div>
+    </section>
+
+    <!-- ===== Leadership & Involvement ===== -->
+    <section class="section" id="leadership">
+      <h3>Leadership &amp; Involvement</h3>
+
+      <div class="cv-entry">
+        <p class="meta">Insert Years Here</p>
+        <p class="role">Insert Role Here — Insert Club/Organization Here</p>
+        <ul>
+          <li>Insert Text Here</li>
+        </ul>
+      </div>
+    </section>
+
+    <!-- ===== Skills ===== -->
+    <section class="section" id="skills">
+      <h3>Skills</h3>
+
+      <div class="cv-entry">
+        <p class="meta">Technical &amp; Lab Skills</p>
         <div class="honors">
-          <span>Presidential Scholar</span>
-          <span>Dean's List</span>
-          <span>Order of the Engineer</span>
-          <span>Alpha Lambda Delta</span>
-          <span>IEEE Region 5</span>
+          <span>Insert Skill Here</span>
+          <span>Insert Skill Here</span>
+          <span>Insert Skill Here</span>
+          <span>Insert Skill Here</span>
+        </div>
+      </div>
+
+      <div class="cv-entry">
+        <p class="meta">Software &amp; Tools</p>
+        <div class="honors">
+          <span>Insert Software Here</span>
+          <span>Insert Software Here</span>
+          <span>Insert Software Here</span>
+        </div>
+      </div>
+
+      <div class="cv-entry">
+        <p class="meta">Languages</p>
+        <div class="honors">
+          <span>Insert Language Here — Insert Level Here</span>
         </div>
       </div>
     </section>
 
-    <p><a href="resume.pdf" target="_blank" rel="noopener">Download résumé (PDF) →</a></p>
+    <!-- ===== Publications & Presentations ===== -->
+    <section class="section" id="publications">
+      <h3>Publications &amp; Presentations</h3>
+
+      <div class="cv-entry">
+        <p class="meta">Insert Date Here</p>
+        <p class="role">Insert Title Here</p>
+        <ul>
+          <li>Insert Text Here — journal/conference name, co-authors, and a link if available</li>
+        </ul>
+      </div>
+    </section>
+
+    <!-- ===== Awards & Honors ===== -->
+    <section class="section" id="awards">
+      <h3>Awards &amp; Honors</h3>
+      <div class="honors">
+        <span>Insert Award Here</span>
+        <span>Insert Award Here</span>
+        <span>Insert Award Here</span>
+        <span>Insert Award Here</span>
+      </div>
+    </section>
+
+    <!-- ===== Certifications ===== -->
+    <section class="section" id="certifications">
+      <h3>Certifications</h3>
+      <div class="honors">
+        <span>Insert Certification Here</span>
+        <span>Insert Certification Here</span>
+      </div>
+    </section>
+
   </main>
 
   <footer>
-   Built by Rylee Barnette · <a href="https://github.com/ryleeannebarbette" target="_blank" rel="noopener">GitHub</a>
+    Built by Rylee Barnette · <a href="https://github.com/ryleeannebarnette" target="_blank" rel="noopener">GitHub</a>
                            · <a href="https://www.linkedin.com/in/rylee-barnette-5aaa1438b/" target="_blank" rel="noopener">LinkedIn</a>
                            · <a href="mailto:ryleeannebarnette@gmail.com">Email</a>
   </footer>
